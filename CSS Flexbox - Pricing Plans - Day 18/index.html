@@ -5,15 +5,84 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>CSS Flexbox | Pricing Plans</title>
+  <!--- Icons - Font Awesome --->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <!-- Google Fonts Optimization -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
-<body>
+<body class="flex center-child">
  
  <section class="pricing">
   
+  <div class="wrap">
+   <h2>Our Pricing Plans</h2>
+   
+   <div class="pricing-cards flex">
+   <!-- Basic Pricing---->
+   <div class="card">
+    <h3>Basic</h3>
+    <p class="price"><span class="highlight">$9</span>/ mo</p>
+    <ul class="features">
+     <li>Access to core features</li>
+     <li>Standard support response time</li>
+     <li>Basic analytics dashboard</li>
+     <li>Limited customization options</li>
+     <li>Project Revision or Edit Included</li>
+     <li>Delivery Within 3–5 Business Days</li>
+    </ul>
+    <button class="cta">Choose Plan</button>
+   </div>
+   <!-- PRO Pricing---->
+   <div class="card">
+    <h3>PRO</h3>
+    <p class="price"><span class="highlight">$19</span>/ mo</p>
+    <ul class="features">
+     <li>Everything in Basic</li>
+     <li>Priority support, faster response time</li>
+     <li>Advanced analytics and reporting</li>
+     <li>Custom branding options</li>
+     <li>Up to 3 Revisions or Edits</li>
+     <li>Access to All Tools + Medium Priority Support</li>
+    </ul>
+    <button class="cta">Choose Plan</button>
+   </div>
+   <!-- Premium Pricing---->
+   <div class="card">
+    <h3>Premium</h3>
+    <p class="price"><span class="highlight">$49</span>/mo</p>
+    <ul class="features">
+     <li>Everything in Pro</li>
+     <li>Dedicated account manager</li>
+     <li>Full API & integration access</li>
+     <li>Early access to new features</li>
+     <li>Unlimited Revisions or Edits</li>
+     <li>Priority Delivery (within 24 hours)</li>
+     
+    </ul>
+    <button class="cta">Choose</button>
+   </div>
+  </div>
+  </div>
  </section>
  
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
