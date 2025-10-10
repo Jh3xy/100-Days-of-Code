@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign Up Page</title>
+ <!-- <link rel="stylesheet" href="../Boilerplates/boiler-plate.css"> -->
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-child">
+   <main>
+      <h1>Sign Up</h1>
+      <form action="#" method="POST">
+         <!-- text field -->
+         <div class="wrap">
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="fullname" class="full-width" placeholder="Input Full Name" required>
+         </div>
+         
+         <!-- <div class="container"></div>-->
+         
+         <!-- email field -->
+         <div class="wrap">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Input Email" class="full-width" required> 
+         </div>
+         
+         <!-- password field-->
+         <div class="wrap">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="full-width" placeholder="Input Password">
+         </div>
+         
+         
+         <div class="flex">
+             <!-- Checkbox -->
+         <div class="container">
+            <p class="label">Hobbies:</p>
+            
+            <span>
+               <input type="checkbox" id="coding" name="hobby" value="coding" checked>
+               <label for="coding">Coding</label>
+            </span>
+            <span>
+               <input type="checkbox" id="reading" name="hobby" value="reading">
+               <label for="reading">Reading</label>
+            </span>
+            <span>
+               <input type="checkbox" id="cooking" name="hobby" value="cooking">
+               <label for="cooking">Cooking</label>
+            </span>
+            <span>
+               <input type="checkbox" id="music" name="hobby" value="music" checked>
+               <label for="music">Music</label>
+            </span>
+            <span>
+               <input type="checkbox" id="sports" name="hobby" value="sports">
+               <label for="sports">Sports</label>
+            </span>
+         </div>    
+         
+            <!-- Radio buttons-->
+         <div class="container">
+            <p class="label">Gender:</p>
+            
+            <span>
+               <input type="radio" id="male" name="gender" value="male" checked>
+               <label for="male">Male</label>
+            </span>
+            <span>
+               <input type="radio" id="female" name="gender" value="female">
+               <label for="female">Female</label>
+            </span>
+            <span>
+               <input type="radio" id="binary" name="gender" value="binary">
+               <label for="Binary">Binary</label>
+            </span>
+            <span>
+               <input type="radio" id="trans" name="gender" value="trans">
+               <label for="trans">Trans</label>
+            </span>
+            <span>
+               <input type="radio" id="neither" name="gender" value="neither">
+               <label for="neither">Rather not say</label>
+            </span>
+         </div>                       
+         </div>
+         
+         <!-- Textarea - Bio -->
+         <div class="wrap">
+            <label for="bio">Bio:</label>
+            <textarea class="full-width" id="bio" name="bio" placeholder="Add a short bio about yourself" style="height: 100px; padding: 10px;" maxlength="100"></textarea>
+         </div>
+         
+         <div class="wrap">
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+               <option disabled selected>Select your country</option>
+               <option value="Nigeria">Nigeria</option>
+               <option value="greece">Greece</option>
+               <option value="south-africa">South Africa</option>
+            </select>
+         </div>
+         
+         <!-- Submit -->
+         <input type="submit" value="Sign Up" id="cta-signup">
+      </form>
+   </main>
+   
+   <!-- watermark -->
+   <footer>
+    <p>Designed by 
+      <!-- This is the link that points to your name -->
+      <a href="https://wa.me/2347069067574?text=Hey%20Jhey%2C%20I%20saw%20your%20project!" target="_blank">Jhey</a>
+    </p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

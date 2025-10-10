@@ -1,0 +1,178 @@
+/* Basic Reset */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Set up some defaults */
+html {
+  font-size: 16px; /* easy scaling */
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fff7ed;
+  color: #1f2937;
+  padding: 1rem;
+  min-height: 100vh; /* full viewport height */
+  position: relative;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1f2937;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+/* Paragraphs */
+p {
+   text-align: left;
+  /* margin-bottom: 1em; */
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1em;
+}
+
+/* Buttons */
+button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* button:hover {
+  background: #0056b3;
+} */
+/* Copyright logo */
+footer {
+   position: absolute; /* takes footer out of normal flow */
+   bottom: 0; /* sticks it to the bottom of the page */
+   width: 100%; /* makes footer span full screen width */
+   color: #1f2937; /* white text for contrast */
+   text-align: center; /* centers text horizontally */
+   padding: 10px 0; /* adds space inside footer */
+}
+footer p{
+   display: inline-block;
+   border: 1px solid #64748b;
+   margin: auto;
+   padding: 5px 1rem;
+   font-size: 10px;
+   font-style: italic;
+   text-decoration: underline;
+}
+footer a {
+   color: #f97316;
+   text-decoration: none; /* */
+   font-size: 15px;
+   font-style: normal;
+   vertical-align: middle;
+   font-weight: 600; /* makes it pop */
+   padding-left: 3px;
+   cursor: pointer;
+   text-decoration: none;
+}
+footer a:hover {
+   text-decoration: underline;
+}
+/* Flex */
+.flex{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 10px;
+}
+.center-child{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ------ Styling ------- */
+main{
+   text-align: center;
+   width: 90%;
+   max-width: 400px;
+   border: 1px solid #fde68a;
+   border-radius: 2px;
+   padding: .5rem 1rem 2rem;
+   background-color: #ffffff;
+}
+span{
+   display: flex;
+   
+}
+label{
+   color: #1f2937;
+}
+span > label{
+   padding-left: 3px;
+}
+.label{
+  margin-bottom: 5px;
+} 
+.wrap, .container {
+   padding-bottom: 9px;
+}
+.wrap > *{
+   display: block;
+   text-align: left;
+}
+.full-width, #cta-signup{
+   width: 100%;
+}
+#cta-signup{
+   margin-top: 10px;
+   padding: .3rem;
+   font-weight: bold;
+   background-color: #f97316;
+   color: #ffffff;
+   outline: none;
+}
+#cta-signup:hover{
+   background-color: #ea580c;
+   border-color: #f97316; 
+}
+input{
+   padding: 4px;
+   font-family: inherit;
+   border: 1px solid #d1d5db; 
+}
+input:focus {
+  outline: none;
+  border-color: #f97316; 
+  background-color: #fde68a; /* subtle focus background */
+}
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #f97316;
+}
+.wrap > label,
+p.label{
+   font-size: .84rem;
+}
+
+
+
+
+
+
