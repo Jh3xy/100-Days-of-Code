@@ -1,11 +1,14 @@
-/*
+
 @media(max-width: 720px){
  .nav_links{
   display: none;
  }
 }
 
-
-/*
+@media(min-width: 720px){
+ .dropdown_menu{
+  display: none;
+ }
+}
 
 

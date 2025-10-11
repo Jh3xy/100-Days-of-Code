@@ -41,10 +41,117 @@ h1,h2,h3,h4,h5,h6{
 /* -------------- */
 body{
  font-family: var(--ff-primary);
+ min-height: 100vh;
 }
 .logo{
  font-size: 32px;
 }
+.wrap{
+ width: 90%;
+ margin: 0 auto;
+}
+nav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-inline: .8rem;
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: var(--clr-primary);
+}
+.nav_links{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+/* display: none; */
+}
+.nav_link a{
+ color: var(--clr-secondary);
+}
+.nav_link:last-child{
+ margin-right: 2rem;
+}
+.dropdown_menu{
+ padding-top: 4px;
+
+}
+
+
+.intro{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 90vh;
+}
+.intro_text{
+ margin: 0 auto;
+ text-align: center;
+}
+.intro_text h1{
+ font-size: 4rem;
+ margin-bottom: 1.4rem;
+}
+.highlight{
+ color: var(--clr-accent);
+}
+.intro_description{
+ color: var(--clr-secondary-100);
+ line-height: 1.4;
+ margin-bottom: 2rem;
+ font-size: 17px; 
+}
+
+.input_wrap{
+ border: 1px solid var(--clr-secondary);
+/* padding: .3rem .4rem; */
+ width: 100%;
+ display: flex;
+/* justify-content: space-around;*/
+ align-items: center;
+ box-shadow: var(--box-shadow);
+ 
+}
+.input_wrap > div{
+ height: 100%;
+ flex: 3;
+ display: flex;
+ justify-content: center;
+ gap: 2px;
+}
+label{
+ text-align: center;
+ padding: .3rem;
+}
+label .notif-icon{
+ font-size: 18px;
+ transform: translateY(5px);
+}
+input[type="email"] {
+  padding-top: .5rem ;
+  padding-bottom: .2rem;
+  padding-left: .2rem;
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 85%;
+ /*flex: 2;*/
+}
+input:focus {
+ border-bottom: 1px solid red;
+}
+.sign_up-btn{
+ flex: 1;
+ padding: .6rem 1rem;
+ font-family: var(--ff-primary);
+ border: none;
+ background: var(--clr-accent);
+}
+
+
 
 
 
