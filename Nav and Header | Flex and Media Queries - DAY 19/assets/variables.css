@@ -19,6 +19,8 @@
  --clr-accent900: hsla(36, 100%, 50%, 1);
  
  --box-shadow: 3px 3px 0 var(--clr-secondary);
+ 
+ --animation-delay: 1s;
 }
 
 
