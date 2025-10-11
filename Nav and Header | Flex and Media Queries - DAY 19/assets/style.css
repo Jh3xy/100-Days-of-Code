@@ -1,0 +1,52 @@
+/* Resets */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html{
+ font-size: 15px;
+}
+button{
+ outline: none;
+ border: 1px solid var(--clr-secondary);
+}
+a{
+ text-decoration: none;
+ 
+}
+ul,
+li{
+ list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+ font-family: var(--ff-secondary);
+}
+
+
+
+
+/* Utilities */
+.flex{
+ display: flex;
+}
+.center-child{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+
+/* -------------- */
+body{
+ font-family: var(--ff-primary);
+}
+.logo{
+ font-size: 32px;
+}
+
+
+
+
+

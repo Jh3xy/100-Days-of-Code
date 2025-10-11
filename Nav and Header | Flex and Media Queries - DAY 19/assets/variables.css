@@ -1,3 +1,26 @@
 :root{
+ --ff-primary: 'Figtree', sans-serif;
+ --fw-primary400: 400;
+ --fw-primary500: 500;
+ --fw-primary700: 700;
+ --fw-primary800: 800;
  
+ --ff-secondary: 'Raleway', sans-serif;
+ --fw-primary500: 500;
+ --fw-primary600: 600;
+ --fw-primary700: 700;
+ --fw-primary800: 800;
+ --fw-primary900: 900;
+ 
+ --clr-primary: hsla(0, 0%, 100%, 1);
+ --clr-secondary: hsla(0, 0%, 0%, 1);
+ --clr-secondary-100: hsla(0, 0%, 0%, 0.8);
+ --clr-accent: hsla(36, 100%, 70%, 1);
+ --clr-accent-900: hsla(36, 100%, 50%, 1);
+ 
+ --box-shadow: 3px 3px 0 var(--clr-secondary);
 }
+
+
+
+
