@@ -49,6 +49,7 @@ body{
 }
 .wrap{
  width: 90%;
+ max-width: 900px;
  margin: 0 auto;
 }
 nav{
@@ -67,7 +68,7 @@ nav{
  justify-content: center;
  gap: 20px;
  position: absolute;
- top: 54px;
+ top: 3vh;
  right: 0;
  display: none;
 }
