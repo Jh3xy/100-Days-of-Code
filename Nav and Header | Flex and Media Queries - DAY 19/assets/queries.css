@@ -1,6 +1,7 @@
 
 @media(max-width: 720px){
  .nav_links{
+  
   background-color: white;
   box-shadow: 2px 2px 16px hsla(0, 0%, 0%, 0.2);
   padding: 1rem;
@@ -17,6 +18,9 @@
 }
 
 @media(min-width: 720px){
+ .nav_links{
+  display: flex;
+ }
  .dropdown_menu{
   display: none;
  }

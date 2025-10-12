@@ -8,13 +8,17 @@ let navLinks = document.querySelector('.nav_links')
 
 
 //Add Click Event Listener to dropDown
-
 dropDown.addEventListener("click", ()=>{
- 
- //Toggle class of 'toggle' on navLinks
  navLinks.classList.toggle('toggle')
- console.log(navLinks)
+// console.log(navLinks)
 })
+
+
+
+
+
+
+
 
 
 
