@@ -1,7 +1,7 @@
 
 @media(max-width: 720px){
  .nav_links{
-  
+  top: 7vh;
   background-color: white;
   box-shadow: 2px 2px 16px hsla(0, 0%, 0%, 0.2);
   padding: 1rem;
