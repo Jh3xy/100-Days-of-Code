@@ -1,0 +1,12 @@
+@media (max-width: 700px) {
+ .nav_links{
+  display: none;
+ }
+}
+
+
+@media (min-width: 701px) {
+ .menu_btn{
+  display: none;
+ }
+}
