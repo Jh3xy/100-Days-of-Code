@@ -29,6 +29,8 @@
 body{
   font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--clr-text-secondary);
+  overflow: hidden;
+  position: relative;
 }
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -53,7 +55,7 @@ nav{
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 900;
+  z-index: 3;
   /*border-bottom: 1px solid white;*/
 }
 .container{
@@ -110,6 +112,81 @@ nav{
   background-color: var(--clr-bg);
   position: relative;
 }
+.hero_info{
+  max-width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; 
+}
+.hero_info h1{
+  font-size: 5.5rem;
+  z-index: 900;
+  margin-bottom: 1rem;
+}
+.hero_description{
+  font-size: 1.1rem;
+}
+.cta{
+  padding: 1rem;
+  background: var(--clr-btn-bg);
+  color: var(--clr-text-primary);
+  font-size: 1.04rem; 
+  font-weight: 600;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+.blob{
+  position: relative;
+}
+.blob::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -45px;
+  width: 300px;
+  height: 200px;
+  background: url("./image/blob.svg") no-repeat center/cover;
+  z-index: 0;
+  filter: blur(30px);
+}
+/*
+.blob::after{
+  content: '';
+  position: absolute;
+  top: -40vh;
+  left: 45px;
+  width: 300px;
+  height: 200px;
+  background: red url("./image/blob.svg") no-repeat center/cover;
+  z-index: 0;
+  filter: blur(30px);
+}
+*/
 
+
+.arrow_up-btn{
+  position: absolute;
+  right: 3%;
+  bottom: 18%;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  background: var(--clr-float-btn);
+  color: var(--clr-text-primary);
+  border-radius: 50%;
+}
+
+/*
+.hint{
+  position: absolute;
+  right: 50vw;
+  transform: translateX(50%);
+  bottom: 12%;
+  padding: 1rem;
+}
+*/
 
 
