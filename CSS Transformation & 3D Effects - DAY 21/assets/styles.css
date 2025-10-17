@@ -1,0 +1,79 @@
+*,*::before,*::after{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+} 
+:root{
+  --clr-bg: hsl(220, 35%, 10%);
+  --clr-card-front: hsl(240, 23%, 20%);
+  --clr-card-back: hsl(230, 25%, 15%);
+  --clr-text: hsl(0, 0%, 100%);
+  --clr-accent: hsl(190, 90%, 50%);
+  --clr-shadow: hsla(0, 0%, 0%, 0.4);
+}
+html{
+ font-size: 15px;
+}
+body{
+ font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color: var(--clr-text);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ background: var(--clr-bg);
+}
+img{
+ width: 100%;
+}
+.card__wrap{
+ perspective: 600px;
+ width: 150px;
+ height: 200px;
+ /*border: 1px solid white; */
+ text-align: center;
+ 
+}
+.card{
+ transform-style: preserve-3d;
+ position: relative;
+ transition: all 600ms ease;
+}
+.card__wrap:hover .card{
+ transform: rotateY(180deg);
+}
+
+
+.cta{
+ outline: none;
+ border: none;
+ background: var(--clr-accent);
+ font-family: inherit;
+ padding: 10px;
+ margin-top: 2px;
+}
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 4.53rem 1rem;
+  backface-visibility: hidden; /* 👈🏽 important */
+}
+
+.card__front {
+  background: var(--clr-card-front);
+  transform: rotateY(0deg); /* 👈🏽 defines front face */
+}
+
+.card__back {
+  background: var(--clr-card-back);
+  transform: rotateY(180deg); /* 👈🏽 defines back face */
+}
+
+.card__front h1 {
+  transform: translateZ(80px); /* try smaller first, like 40–60px */
+}
+
+
+
